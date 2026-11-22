@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Baixar o Levi</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .dl { max-width: 640px; margin: 40px auto 60px; text-align: center; padding: 0 16px; }
+  .dl img.m { width: 140px; height: 140px; }
+  .dl h1 { margin: 10px 0 6px; }
+  .dl .big { display: inline-block; font-size: 20px; padding: 16px 30px; margin: 18px 0 6px; }
+  .dl .muted { opacity: .75; font-size: 14px; }
+  .dl ol { text-align: left; line-height: 1.7; margin: 26px auto 0; max-width: 520px; }
+</style>
+</head>
+<body>
+<div class="wrap"><header class="top"><img src="icon.png" alt=""><a class="brand" href="index.html">Levi</a></header></div>
+<main class="dl">
+  <img class="m" src="mascot.png" alt="">
+  <h1>Obrigado por comprar o Levi! 🎉</h1>
+  <p>O download começa sozinho. Se não começar, clique no botão:</p>
+  <a class="btn big" id="dlBtn" href="https://github.com/LeviAssistIA/levi-releases/releases/latest">⬇ Baixar o Levi para Windows</a>
+  <div class="muted" id="dlInfo">Procurando a versão mais nova…</div>
+  <ol>
+    <li>Abra o arquivo <b>Levi-Setup</b> que baixou (fica na pasta Downloads).</li>
+    <li>Se aparecer <b>"O Windows protegeu o computador"</b>, clique em <b>Mais informações → Executar assim mesmo</b>. Isso acontece com todo programa novo; não é vírus.</li>
+    <li>Siga a instalação. O Levi abre sozinho no final.</li>
+    <li>Nós vamos te chamar no WhatsApp para deixar tudo configurado com você.</li>
+  </ol>
+  <p class="muted" style="margin-top:24px">Precisa de ajuda? <a href="mailto:leviassistenteia@gmail.com">leviassistenteia@gmail.com</a></p>
+</main>
+<script>
+// Acha o instalador da versão mais nova no GitHub e começa o download.
+(async () => {
+  const btn = document.getElementById('dlBtn'); const info = document.getElementById('dlInfo');
+  try {
+    const r = await fetch('https://api.github.com/repos/LeviAssistIA/levi-releases/releases/latest', { headers: { Accept: 'application/vnd.github+json' } });
+    if (!r.ok) throw new Error(r.status);
+    const rel = await r.json();
+    const exe = (rel.assets || []).find((a) => /^Levi-Setup-.*\.exe$/i.test(a.name));
+    if (!exe) throw new Error('sem instalador');
+    btn.href = exe.browser_download_url;
+    info.textContent = `Versão ${rel.tag_name.replace(/^v/, '')} · ${(exe.size / 1048576).toFixed(0)} MB`;
+    setTimeout(() => { window.location.href = exe.browser_download_url; }, 800);
+  } catch {
+    info.textContent = 'Clique no botão e baixe o arquivo Levi-Setup (.exe) da versão mais nova.';
+  }
+})();
+</script>
+</body>
+</html>

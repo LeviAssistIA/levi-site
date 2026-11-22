@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Levi · seu assistente pessoal com IA para Windows</title>
+<meta name="description" content="Levi é um assistente com inteligência artificial para Windows: responde de qualquer tela pela barra flutuante, vê o que você está fazendo, organiza tarefas, e-mails e agenda e obedece à voz. A partir de R$ 97, pagamento único.">
+<meta property="og:title" content="Levi IA · seu assistente pessoal com IA">
+<meta property="og:description" content="Barra flutuante que vê sua tela, mensagens no WhatsApp e Instagram, planilhas completas, Foco do dia, e-mails, lembretes e rotinas, com ChatGPT, Gemini e Claude. A partir de R$ 97, pagamento único.">
+<meta property="og:image" content="https://leviassistia.github.io/levi-site/capa.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7c3aed">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sticky" id="topbar"><div class="wrap">
+  <header class="top">
+    <img src="icon.png" alt=""><a class="brand" href="#">Levi</a>
+    <nav><a href="#recursos">Recursos</a><a href="#planos">Planos</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a><a class="btn" href="#planos">Comprar</a></nav>
+  </header>
+</div></div>
+
+<div class="hero-bg">
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <span class="pill"><b>NOVO</b> Modo Jarvis: duas palmas e ele já está ouvindo</span>
+      <h1>O assistente que <span class="grad">trabalha junto com você</span></h1>
+      <p class="lead">O Levi fica no seu PC e responde de qualquer tela com <b>Ctrl + Espaço</b>. Ele entende o que você está fazendo, organiza suas tarefas, separa os e-mails que importam e obedece à sua voz.</p>
+      <a class="btn" href="#planos">Quero o Levi · R$ 97</a>
+      <a class="btn ghost" href="#recursos">Ver o Levi em ação</a>
+      <ul class="hero-checks"><li>Pagamento único</li><li>Sem mensalidade</li><li>IA grátis inclusa</li><li>Windows 10 e 11</li></ul>
+    </div>
+
+    <div class="stage hero-stage reveal">
+      <img class="peek" src="mascot.png" alt="Mascote do Levi: um bebê de cachinhos sorrindo">
+      <div class="float-chip c1">👀 <span>vendo sua tela</span></div>
+      <div class="float-chip c2">⚡ <span>Resposta em segundos</span> <em>Ctrl+Espaço</em></div>
+      <div class="win" id="heroSim">
+        <div class="win-bar"><i></i><i></i><i></i><span id="heroTitle">Vendas Novembro.xlsx · Excel</span></div>
+        <div class="win-body">
+          <div class="scene" data-scene="0">
+            <div class="formula"><b>fx</b> =PROCV(A2;Tabela;3;0)</div>
+            <table class="sheet">
+              <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+              <tr><th>1</th><td>Código</td><td>Produto</td><td>Preço</td><td>Estoque</td></tr>
+              <tr><th>2</th><td>1042</td><td>Caneca azul</td><td class="fx">R$ 39,90</td><td>18</td></tr>
+              <tr><th>3</th><td>1043</td><td>Agenda 2027</td><td>R$ 54,00</td><td>7</td></tr>
+              <tr><th>4</th><td>1044</td><td>Caderno A5</td><td>R$ 22,50</td><td>31</td></tr>
+              <tr><th>5</th><td>1045</td><td>Kit canetas</td><td>R$ 18,90</td><td>42</td></tr>
+            </table>
+          </div>
+          <div class="scene off" data-scene="1">
+            <div class="lesson">
+              <div class="video">Aula 5 · Fotossíntese<br>Biologia</div>
+              <div class="quiz"><h4>Questão 3</h4>Onde acontece a fase clara da fotossíntese?
+                <div class="opt" style="margin-top:8px">a) No núcleo</div><div class="opt">b) Nos tilacoides</div><div class="opt">c) Na mitocôndria</div></div>
+            </div>
+          </div>
+          <div class="scan" id="heroScan"></div>
+          <div class="qcard" id="heroCard"><div class="who">Levi <span class="tag">👀 vi sua tela</span></div><div class="a" id="heroA"></div></div>
+          <div class="qbar"><div class="av"></div><div class="q" id="heroQ"></div><span class="eye on" id="heroEye">👁</span><span class="kbd">Ctrl+Espaço</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-in">
+  <span>💬 Barra flutuante</span><span>👀 Vê sua tela</span><span>🖥️ Todos os monitores</span><span>🎯 Foco do dia</span><span>📎 Anexos e busca de e-mail</span><span>🤖 ChatGPT, Gemini e Claude</span><span>📱 WhatsApp e Instagram</span><span>📊 Planilha inteira</span><span>🔔 Lembretes</span><span>⚡ Rotinas</span><span>🗓️ Minha rotina</span><span>🎤 "Ei, Levi"</span>
+  <span>💬 Barra flutuante</span><span>👀 Vê sua tela</span><span>🖥️ Todos os monitores</span><span>🎯 Foco do dia</span><span>📎 Anexos e busca de e-mail</span><span>🤖 ChatGPT, Gemini e Claude</span><span>📱 WhatsApp e Instagram</span><span>📊 Planilha inteira</span><span>🔔 Lembretes</span><span>⚡ Rotinas</span><span>🗓️ Minha rotina</span><span>🎤 "Ei, Levi"</span>
+</div></div>
+
+<section id="recursos"><div class="wrap">
+  <div class="center reveal">
+    <span class="eyebrow">Veja o Levi em ação</span>
+    <h2>Tudo o que ele faz por você,<br><span class="grad">sem você sair do que está fazendo</span></h2>
+    <p class="sub">Peça escrevendo ou falando. Cada exemplo abaixo mostra como o Levi funciona no seu PC.</p>
+  </div>
+
+  <!-- 1. vê a tela em todos os monitores -->
+  <div class="feat t-sunset">
+    <div class="feat-text reveal">
+      <span class="ftag new">👀 Vê sua tela</span>
+      <h3>Ele enxerga o que está na sua tela, até no segundo monitor</h3>
+      <p>Pergunte pela barra flutuante e o Levi tira uma foto de cada monitor conectado para entender o que você está fazendo. A tela onde está a barra vem primeiro.</p>
+      <ul><li>Explica fórmulas, exercícios, erros e textos na hora</li><li>Funciona com 1, 2 ou mais monitores</li><li>A foto não é guardada e você liga ou desliga no 👁</li></ul>
+    </div>
+    <div class="demo reveal" id="simMon">
+      <div class="monitors">
+        <div class="mon"><div class="lbl">tela 1 de 2 · onde está a barra</div><div class="scr"><div class="mini-video">Aula 5 · Fotossíntese</div><div class="mini-lines"><i></i><i></i><i></i></div><div class="scan"></div></div><div class="foot"></div></div>
+        <div class="mon"><div class="lbl">tela 2 de 2</div><div class="scr doc-mini"><h5>Resumo de Biologia.docx</h5><div class="mini-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="scan"></div></div><div class="foot"></div></div>
+      </div>
+      <div class="bubble"><div class="av"></div><div>Na <b>tela 1</b> você está na aula de fotossíntese e na <b>tela 2</b> está o seu resumo no Word. Quer que eu escreva 5 perguntas para revisar?</div></div>
+    </div>
+  </div>
+
+  <!-- 2. foco do dia -->
+  <div class="feat rev t-candy">
+    <div class="feat-text reveal">
+      <span class="ftag new">🎯 Foco do dia</span>
+      <h3>As 3 tarefas mais importantes de hoje, separadas para você</h3>
+      <p>As tarefas ficam organizadas em Hoje, Atrasadas e Feitas, com prazo e prioridade. O Levi destaca o que vem primeiro e conta quantos dias seguidos você cumpriu tudo.</p>
+      <ul><li>Prazo com data e hora e lembrete no horário</li><li>Prioridade alta, média ou baixa num clique</li><li>🔥 Sequência de dias para manter o ritmo</li></ul>
+    </div>
+    <div class="demo reveal" id="simTasks">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi · Tarefas</span></div>
+        <div class="win-body tk" style="min-height:0">
+          <div class="tk-head">
+            <div class="tk-stat"><b data-k="done">0</b><span>feitas hoje</span></div>
+            <div class="tk-stat"><b data-k="left">3</b><span>pendentes</span></div>
+            <div class="tk-stat"><b data-k="streak">🔥 6</b><span>dias seguidos</span></div>
+          </div>
+          <div class="tk-focus"><div class="t">Foco do dia</div>
+            <div class="tk-row"><span class="ck">✓</span><span class="nm">Enviar proposta para o cliente</span><span class="pr hi">Alta</span></div>
+            <div class="tk-row"><span class="ck">✓</span><span class="nm">Pagar o boleto da internet</span><span class="pr md">Média</span></div>
+            <div class="tk-row"><span class="ck">✓</span><span class="nm">Revisar slides da reunião</span><span class="pr lo">Baixa</span></div>
+          </div>
+          <div class="tk-row" style="border:0;padding-left:6px"><span class="ck" style="border-style:dashed"></span><span class="nm" style="color:var(--muted)">Comprar presente da Ana</span><span class="when">amanhã 18:00</span></div>
+          <div class="confetti"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. e-mails -->
+  <div class="feat t-electric">
+    <div class="feat-text reveal">
+      <span class="ftag new">📎 E-mails</span>
+      <h3>Separa o urgente, abre anexos e acha qualquer e-mail</h3>
+      <p>O Levi lê o Gmail e o Outlook, marca o que é urgente e deixa promoções para depois. Você vê PDF, Word e Excel sem baixar e busca até os e-mails mais antigos.</p>
+      <ul><li>Aviso na hora quando chega algo importante</li><li>Busca por pessoa, assunto ou palavra</li><li>Ele só cria rascunhos: quem envia é você</li></ul>
+    </div>
+    <div class="demo reveal" id="simMail">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi · E-mails</span></div>
+        <div class="win-body" style="min-height:0">
+          <div class="mx-search">🔎 <span class="q"></span></div>
+          <div class="mx-list">
+            <div class="mx-row"><span class="ini" style="background:#e11d48">MC</span><span class="tx"><b>Marcos · Contabilidade</b><span>Boleto do imposto vence hoje</span></span><span class="lab urg">🔴 Urgente</span></div>
+            <div class="mx-row"><span class="ini" style="background:#7c3aed">JS</span><span class="tx"><b>Júlia Souza</b><span>Contrato revisado para assinar</span></span><span class="lab imp">⭐ Importante</span></div>
+            <div class="mx-row"><span class="ini" style="background:#9ca3af">LJ</span><span class="tx"><b>Loja Online</b><span>Só hoje: 40% de desconto em tudo</span></span><span class="lab dep">Depois</span></div>
+            <div class="mx-row"><span class="ini" style="background:#0ea5e9">NT</span><span class="tx"><b>Net Fibra</b><span>Sua fatura de novembro chegou</span></span><span class="lab imp">⭐ Importante</span></div>
+          </div>
+          <div class="mx-att"><span class="pdf">PDF</span><div><b>fatura-novembro.pdf</b><div style="color:var(--muted);font-size:12px">Valor R$ 119,90 · vence dia 25 · aberto sem baixar</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp e Instagram -->
+  <div class="feat rev t-candy">
+    <div class="feat-text reveal">
+      <span class="ftag new">📱 WhatsApp e Instagram</span>
+      <h3>"Manda um bom dia para a Ana no WhatsApp" e ele manda</h3>
+      <p>O WhatsApp e o Direct do Instagram ficam abertos dentro do Levi, com a sua conta. Ele pesquisa o contato, lê as últimas mensagens e escreve por você, só quando você pede.</p>
+      <ul><li>"Quem me mandou mensagem hoje?"</li><li>"O que a Ana me respondeu?"</li><li>Se tiver dois contatos parecidos, ele pergunta qual é</li></ul>
+    </div>
+    <div class="demo reveal">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi · Mensagens</span></div>
+        <div class="win-body wa-demo" style="min-height:0">
+          <div class="wa-ask">Manda um bom dia carinhoso para a Ana no WhatsApp</div>
+          <div class="wa-chat">
+            <div class="wa-head"><span class="wa-av">A</span><b>Ana</b><small>online</small></div>
+            <div class="wa-msg in">Chegou bem em casa?</div>
+            <div class="wa-msg out">Bom dia, meu amor! ☀️<br>Que o seu dia seja tão lindo quanto você 💜<span>21:30 ✓✓</span></div>
+          </div>
+          <div class="wa-done">✓ Enviado para <b>Ana</b> no WhatsApp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- planilha inteira -->
+  <div class="feat t-gold">
+    <div class="feat-text reveal">
+      <span class="ftag new">📊 Planilha inteira</span>
+      <h3>Lê tudo da planilha: todas as abas, fórmulas e até o que está oculto</h3>
+      <p>Mande o arquivo do Excel e o Levi lê linha por linha, mesmo as planilhas grandes. Ele vê as fórmulas, as linhas filtradas, as colunas e abas ocultas, e atualiza o que você pedir.</p>
+      <ul><li>Todas as abas, sem cortar no meio</li><li>Fórmulas e valores, lado a lado</li><li>Avisa o que estava oculto ou filtrado</li></ul>
+    </div>
+    <div class="demo reveal">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Estoque 2026.xlsx</span></div>
+        <div class="win-body xl-demo" style="min-height:0">
+          <div class="xl-tabs"><span class="on">Vendas</span><span>Estoque</span><span class="hid">Custos (oculta)</span></div>
+          <div class="xl-read"><b>1.248</b> linhas lidas · <b>3</b> abas · <b>27</b> fórmulas</div>
+          <div class="xl-bar"><i style="width:100%"></i></div>
+          <div class="xl-ans"><span class="av"></span><div>Li as 3 abas, incluindo a <b>Custos</b>, que estava oculta, e 12 linhas escondidas pelo filtro. O produto com mais lucro é a <b>Agenda 2027</b>. Quer que eu atualize os preços na aba Vendas?</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. várias IAs -->
+  <div class="feat rev t-aurora">
+    <div class="feat-text reveal">
+      <span class="ftag new">🤖 Conversa</span>
+      <h3>ChatGPT, Gemini e Claude dentro da mesma conversa</h3>
+      <p>Use a IA grátis que já vem pronta ou entre com a conta que você já tem do ChatGPT ou do Claude, sem pagar crédito. No Automático, se uma não responder, o Levi troca sozinho.</p>
+      <ul><li>IA grátis inclusa (Groq, Gemini, OpenRouter e NVIDIA)</li><li>Quer uma específica? Escreva "usa o Claude"</li><li>Qualquer IA mexe no PC: volume, arquivos e navegador</li></ul>
+    </div>
+    <div class="demo reveal" id="simChat">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi · Conversa</span></div>
+        <div class="win-body" style="min-height:0">
+          <div class="modes"><span class="mode" data-m="0">Levi</span><span class="mode" data-m="1">ChatGPT</span><span class="mode" data-m="2">Gemini</span><span class="mode" data-m="3">Claude</span></div>
+          <div class="chat"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. minha rotina -->
+  <div class="feat t-berry">
+    <div class="feat-text reveal">
+      <span class="ftag new">🗓️ Minha rotina</span>
+      <h3>Entende o seu dia e escreve um resumo detalhado</h3>
+      <p>Com a Minha rotina ligada, o Levi anota em que você passou o tempo. Com o 👁, ele também olha a tela de tempos em tempos e escreve uma frase sobre o que você está fazendo.</p>
+      <ul><li>Resumo da manhã, tarde e noite, com o que ficou pendente</li><li>Descobre a sua rotina e sugere horários</li><li>Não olha banco, senhas, WhatsApp nem janelas privadas</li></ul>
+    </div>
+    <div class="demo reveal" id="simRot">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi · Minha rotina</span></div>
+        <div class="win-body" style="min-height:0">
+          <div class="rt">
+            <div class="rt-item"><span class="h">08:40</span><span class="d"><b>Outlook</b>Respondendo os e-mails da equipe sobre a entrega de sexta</span></div>
+            <div class="rt-item"><span class="h">09:30</span><span class="d"><b>Excel</b>Preenchendo a planilha Vendas Novembro, coluna de outubro</span></div>
+            <div class="rt-item"><span class="h">11:10</span><span class="d"><b>Chrome</b>Assistindo a aula 5 de Biologia e fazendo o questionário</span></div>
+            <div class="rt-item"><span class="h">14:20</span><span class="d"><b>Word</b>Escrevendo a proposta para o cliente Ribeiro</span></div>
+          </div>
+          <div class="rt-sum"><b>Resumo do dia:</b> manhã de e-mails e planilha, tarde focada na proposta. <b>Ficou pendente:</b> enviar a proposta. <b>Sugestão do Levi:</b> deixe os e-mails para as 8h30 e a planilha logo depois.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. voz -->
+  <div class="feat rev t-gold">
+    <div class="feat-text reveal">
+      <span class="ftag">🎤 Voz</span>
+      <h3>"Ei, Levi" e pronto, sem tocar no PC</h3>
+      <p>Chame pela voz e peça o que precisar: marcar compromissos, tocar música, criar lembretes ou perguntar qualquer coisa. A palavra de ativação é ouvida no seu computador, sem internet.</p>
+      <ul><li>Agenda do Google e do Outlook juntas</li><li>Spotify: "toca lo-fi para estudar"</li><li>Lembretes, timers e contador de água</li></ul>
+    </div>
+    <div class="demo reveal" id="simVoice">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi</span></div>
+        <div class="win-body voice" style="min-height:0">
+          <div class="mic">🎤</div>
+          <div class="wave"></div>
+          <div class="said"></div>
+          <div class="cal"><span class="day">SEX<b>20</b></span><span>Dentista às 10:00<br><small style="color:var(--muted);font-weight:600">Adicionado à sua agenda ✓</small></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. modo jarvis -->
+  <div class="feat t-electric">
+    <div class="feat-text reveal">
+      <span class="ftag new">🦾 Modo Jarvis</span>
+      <h3>Duas palmas e ele já está ouvindo</h3>
+      <p>Bata duas palmas ou diga <b>"Levi, ativa o modo Jarvis"</b>. Ele responde <i>"Online. Às suas ordens"</i> e vira uma conversa de verdade: você fala, ele responde falando e já volta a escutar, sem repetir o nome e sem tocar no teclado.</p>
+      <ul><li>Liga com duas palmas ou pela voz</li><li>Responde em voz alta e continua ouvindo</li><li>"Pode descansar" e ele sai do modo</li></ul>
+    </div>
+    <div class="demo reveal">
+      <div class="win"><div class="win-bar"><i></i><i></i><i></i><span>Levi · Modo Jarvis</span></div>
+        <div class="win-body jv">
+          <div class="jv-ring"><div class="jv-face"></div></div>
+          <div class="jv-badge">🦾 MODO JARVIS</div>
+          <div class="jv-line me">👏 👏</div>
+          <div class="jv-line levi">Online. Às suas ordens, Carlos.</div>
+          <div class="jv-line me">Tenho alguma reunião hoje?</div>
+          <div class="jv-line levi">Uma só: com o fornecedor às 15h. Quer que eu te lembre 10 minutos antes?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="center reveal"><span class="eyebrow">E tem mais</span><h2>Um assistente completo para o dia a dia</h2><p class="sub">Tudo isso já vem no Levi, sem pagar nada a mais.</p></div>
+  <div class="grid">
+    <div class="card reveal t-sunset"><div class="ico">💬</div><h3>Barra flutuante</h3><p>Ctrl + Espaço abre a barra em cima de qualquer programa. Pergunte e continue o que estava fazendo.</p></div>
+    <div class="card reveal t-electric"><div class="ico">📅</div><h3>Agenda organizada</h3><p>"Marca reunião terça às 15h." Junta o Google Agenda e o Outlook num lugar só.</p></div>
+    <div class="card reveal t-aurora"><div class="ico">🔔</div><h3>Lembretes coloridos</h3><p>Crie em um clique ("Amanhã 9h") e veja quanto falta em cada cartão. O que vence em 24 h fica em vermelho.</p></div>
+    <div class="card reveal t-sunset"><div class="ico">⚡</div><h3>Rotinas prontas</h3><p>"Bom dia", "Modo foco" e "Fim do expediente": vários passos de uma vez, com um clique ou no horário.</p></div>
+    <div class="card reveal t-electric"><div class="ico">📊</div><h3>Planilhas e relatórios</h3><p>Peça uma planilha de gastos ou um relatório e ele monta o arquivo pronto para abrir.</p></div>
+    <div class="card reveal t-candy"><div class="ico">🎵</div><h3>Spotify</h3><p>"Toca algo para focar", "próxima", "volume 30". Controle a música sem abrir o app.</p></div>
+    <div class="card reveal t-gold"><div class="ico">🚀</div><h3>PC mais rápido</h3><p>Limpa arquivos temporários e mostra o que está deixando o computador lento.</p></div>
+    <div class="card reveal t-berry"><div class="ico">🏆</div><h3>Níveis e prêmios</h3><p>Use todo dia, suba de nível e ganhe temas, roupas e um pet para o seu Levi.</p></div>
+    <div class="card reveal t-aurora"><div class="ico">✍️</div><h3>Corretor de português</h3><p>Enquanto você escreve, ele mostra a palavra certa ("voce → você") e corrige com um clique.</p></div>
+    <div class="card reveal t-electric"><div class="ico">💻</div><h3>Funciona sem internet</h3><p>Com o cérebro offline (Ollama, grátis), a IA roda dentro do seu PC: sem limite e nada sai do computador.</p></div>
+    <div class="card reveal t-sunset"><div class="ico">📽️</div><h3>Apresentações prontas</h3><p>"Faz uma apresentação sobre vendas" e ele monta no PowerPoint, com 8 temas profissionais.</p></div>
+    <div class="card reveal t-gold"><div class="ico">🔄</div><h3>Sempre atualizado</h3><p>Versão nova chega sozinha. Um clique em "Atualizar agora" e pronto, sem reinstalar.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="center reveal"><span class="eyebrow">Por dentro do app</span><h2>Bonito, simples e em português</h2><p class="sub">Telas reais do Levi no tema claro. Você escolhe o tema e a cor que mais gostar.</p></div>
+  <div class="shots">
+    <figure class="reveal"><img src="tela-inicio.png" alt="Tela de Início do Levi com o resumo do dia" loading="lazy"><figcaption>🏠 Início com o resumo do seu dia</figcaption></figure>
+    <figure class="reveal"><img src="tela-tarefas.png" alt="Tela de Tarefas do Levi com o Foco do dia" loading="lazy"><figcaption>🎯 Tarefas com Foco do dia</figcaption></figure>
+    <figure class="reveal"><img src="tela-emails.png" alt="Tela de E-mails do Levi com anexo aberto" loading="lazy"><figcaption>📎 E-mails com anexos</figcaption></figure>
+    <figure class="reveal"><img src="tela-corretor.png" alt="Conversa do Levi sugerindo a correção das palavras escritas errado" loading="lazy"><figcaption>✍️ Corretor enquanto você escreve</figcaption></figure>
+    <figure class="reveal"><img src="tela-lembretes.png" alt="Tela de Lembretes do Levi com cartões coloridos" loading="lazy"><figcaption>🔔 Lembretes com quanto falta</figcaption></figure>
+    <figure class="reveal"><img src="tela-cerebro.png" alt="Tela Cérebro do Levi no modo Automático" loading="lazy"><figcaption>🧠 Cérebro no Automático</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="planos" class="prices-bg"><div class="wrap">
+  <div class="center reveal"><span class="eyebrow">🔥 Preço de lançamento</span><h2>Escolha o seu Levi</h2><p class="sub">Pagamento único, sem mensalidade. Pix, cartão ou boleto pela Cakto, com garantia de 7 dias.</p></div>
+  <div class="prices">
+    <div class="price reveal">
+      <h3>Levi IA</h3>
+      <div class="for">Todas as funções do assistente</div>
+      <div class="val"><sup>R$</sup><b>97</b></div>
+      <div class="once">pagamento único</div>
+      <ul><li>Barra flutuante, tarefas, e-mails e agenda</li><li>Conversa com ChatGPT, Gemini e Claude</li><li>WhatsApp, Instagram e planilhas completas</li><li>Minha rotina e comandos de voz</li><li>IA grátis inclusa</li><li>👁 Ver a tela libera no nível 20</li><li>Atualizações e ajuda pelo WhatsApp</li></ul>
+      <a class="btn ghost" href="https://pay.cakto.com.br/qpxie77_1329556">Comprar Levi IA</a>
+    </div>
+    <div class="price best reveal">
+      <span class="badge">⭐ Mais escolhido</span>
+      <h3>Levi Completo</h3>
+      <div class="for">Tudo liberado desde o primeiro dia</div>
+      <div class="val"><sup>R$</sup><b>147</b></div>
+      <div class="once">pagamento único</div>
+      <ul><li><b>Tudo do Levi IA</b></li><li>👁 Barra flutuante que vê a sua tela, na hora</li><li>Os 8 prêmios liberados sem subir de nível</li><li>Temas especiais, roupas, pet e aura</li><li>Roupa dourada lendária</li><li>Atualizações e ajuda pelo WhatsApp</li></ul>
+      <a class="btn" href="https://pay.cakto.com.br/jqaec73_1337131">Comprar Levi Completo</a>
+    </div>
+    <div class="price reveal">
+      <span class="badge up">⬆ Para quem já tem</span>
+      <h3>Upgrade Completo</h3>
+      <div class="for">Já comprou o Levi IA? Vire Completo</div>
+      <div class="val"><sup>R$</sup><b>57</b></div>
+      <div class="once">pagamento único</div>
+      <ul><li>Vira Levi Completo no mesmo PC</li><li>👁 Ver a tela liberado na hora</li><li>Os 8 prêmios liberados</li><li>Sem reinstalar nada</li></ul>
+      <a class="btn ghost" href="https://pay.cakto.com.br/epdfp32_1339841">Fazer o upgrade</a>
+    </div>
+  </div>
+  <div class="guarantee reveal"><span>🛡️ Garantia de 7 dias</span><span>💳 Pix, cartão ou boleto</span><span>🔄 Atualizações inclusas</span><span>💬 Ajuda pelo WhatsApp</span></div>
+</div></section>
+
+<section id="como"><div class="wrap">
+  <div class="center reveal"><span class="eyebrow">Simples assim</span><h2>Como funciona</h2><p class="sub">Você compra, instala e a gente te ajuda a deixar tudo pronto.</p></div>
+  <div class="steps">
+    <div class="card reveal"><h3>Compre</h3><p>Pague com segurança pela Cakto (Pix, cartão ou boleto). Pagamento único, sem mensalidade.</p></div>
+    <div class="card reveal"><h3>Instale</h3><p>Com o pagamento aprovado, você recebe o link de download por e-mail. Se o Windows avisar, clique em <b>Mais informações → Executar assim mesmo</b>.</p></div>
+    <div class="card reveal"><h3>Configuramos com você</h3><p>Chamamos você no WhatsApp para conectar seu e-mail, agenda, Spotify e a inteligência artificial.</p></div>
+  </div>
+</div></section>
+
+<section id="privacidade" style="padding-top:20px"><div class="wrap">
+  <div class="center reveal"><span class="eyebrow">Privacidade</span><h2>Seus dados ficam com você</h2><p class="sub">O Levi não tem servidor guardando seus e-mails nem suas telas.</p></div>
+  <div class="grid">
+    <div class="card reveal t-electric"><div class="ico">🔐</div><h3>Guardado no seu PC</h3><p>Logins e chaves ficam criptografados pelo próprio Windows, só no seu computador.</p></div>
+    <div class="card reveal t-sunset"><div class="ico">👁</div><h3>Foto da tela não fica salva</h3><p>Quando ele olha a tela, só a resposta ou a frase é guardada. Bancos, senhas e janelas privadas ficam de fora.</p></div>
+    <div class="card reveal t-aurora"><div class="ico">✉️</div><h3>Só envia quando você pede</h3><p>E-mails ficam como rascunho para você enviar. No WhatsApp e no Instagram, ele só manda a mensagem que você pediu. Veja tudo na <a href="privacidade.html">política de privacidade</a>.</p></div>
+  </div>
+</div></section>
+
+<section id="duvidas" style="padding-top:20px"><div class="wrap">
+  <div class="center reveal"><span class="eyebrow">Dúvidas</span><h2>Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details><summary>Quanto custa?</summary><p>O <b>Levi IA</b> custa R$ 97 e o <b>Levi Completo</b> custa R$ 147, em pagamento único, sem mensalidade. Os dois incluem as atualizações e a ajuda para configurar pelo WhatsApp. A inteligência artificial pode ser usada de graça (Groq, Gemini, OpenRouter e NVIDIA, dentro dos limites deles); se preferir, entre com a conta que você já tem do ChatGPT ou do Claude e o Levi usa a sua assinatura, sem comprar crédito.</p></details>
+    <details><summary>Qual a diferença entre o Levi IA e o Levi Completo?</summary><p>Os dois têm todas as funções do assistente. No Completo, a barra flutuante já vê a sua tela desde o primeiro dia e os 8 prêmios (temas, roupas, pet, aura e a roupa dourada) vêm liberados. No Levi IA, você libera os prêmios usando todo dia e subindo de nível, e o 👁 da barra libera no nível 20.</p></details>
+    <details><summary>Já tenho o Levi IA. Como viro Completo?</summary><p>Compre o <a href="https://pay.cakto.com.br/epdfp32_1339841">Upgrade por R$ 57</a>. Tudo é liberado no mesmo computador, sem reinstalar e sem perder nada.</p></details>
+    <details><summary>Como recebo o programa depois de pagar?</summary><p>Assim que o pagamento é aprovado, a Cakto envia para o seu e-mail o link de download do Levi. No Pix é quase na hora; no boleto, até 3 dias úteis. Depois a gente te chama no WhatsApp para configurar.</p></details>
+    <details><summary>Ele vê minha tela o tempo todo?</summary><p>Não. Pela barra flutuante, ele só tira a foto quando você pergunta, e dá para desligar no 👁. Na Minha rotina, ele só olha se você ligar o olhinho, de 5 em 5 a 30 em 30 minutos, e guarda só uma frase. A foto nunca é salva e ele não olha bancos, senhas, WhatsApp, janelas privadas nem quando você está ausente.</p></details>
+    <details><summary>E se eu me arrepender?</summary><p>Você pode pedir o reembolso em até 7 dias após a compra, pelo e-mail <a href="mailto:leviassistenteia@gmail.com">leviassistenteia@gmail.com</a>.</p></details>
+    <details><summary>Por que o Windows mostra um aviso ao instalar?</summary><p>O Windows avisa sobre programas novos que ainda não têm certificado digital pago. Clique em <b>Mais informações → Executar assim mesmo</b>.</p></details>
+    <details><summary>O Levi fica me ouvindo o tempo todo?</summary><p>Ele fica atento só ao próprio nome, e essa escuta é feita no seu PC, sem internet. O áudio só sai do computador quando você diz "Levi" e faz um pedido, para ser entendido. Dá para desligar quando quiser.</p></details>
+    <details><summary>Funciona sem internet?</summary><p>Sim, com o <b>cérebro offline</b>: instale o Ollama (grátis) e escolha um modelo na tela Cérebro. A IA passa a rodar dentro do seu PC, sem limite de uso e sem mandar nada para fora. Ela é mais lenta que as IAs da internet, então o Levi usa ela como reserva quando a internet cai (ou sempre, se você preferir).</p></details>
+    <details><summary>Funciona no Mac ou no celular?</summary><p>Por enquanto, só no Windows 10 e 11 (64 bits).</p></details>
+  </div>
+</div></section>
+
+<section style="padding-top:10px"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><h2>Deixe o Levi trabalhar com você</h2><p>A partir de R$ 97, pagamento único. Garantia de 7 dias.</p></div>
+    <img src="mascot.png" alt="">
+    <a class="btn white" href="#planos">Ver os planos</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span id="ano">2026</span> Levi</span>
+  <nav><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a href="mailto:leviassistenteia@gmail.com">Contato</a></nav>
+</div></footer>
+
+<script src="site.js"></script>
+</body>
+</html>
